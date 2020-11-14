@@ -1,0 +1,462 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CMB2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/cmb2\n"
+"POT-Creation-Date: 2016-10-26 15:12+0000\n"
+"PO-Revision-Date: Fri Oct 30 2020 15:27:14 GMT+0200 (Восточная Европа, "
+"стандартное время)\n"
+"Last-Translator: Simple <sy-shef@ukr.net>\n"
+"Language-Team: English (United Kingdom) (http://www.transifex.com/wp-"
+"translations/cmb2/language/en_GB/)\n"
+"Language: Russian\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Textdomain-Support: yes\n"
+"X-Loco-Target-Locale: ru_RU\n"
+"X-Poedit-SearchPath-0: ."
+
+msgid "О нас"
+msgstr ""
+
+msgid "Меню"
+msgstr ""
+
+msgid "Оплата и Доставка"
+msgstr ""
+
+msgid "Контакты"
+msgstr ""
+
+msgid "Принципы нашей работы"
+msgstr ""
+
+msgid "Взгляд изнутри"
+msgstr ""
+
+msgid "Из первых уст"
+msgstr ""
+
+msgid "Вегетарианская еда"
+msgstr ""
+
+msgid "Сезонное блюдо"
+msgstr ""
+
+msgid "Карта доставки"
+msgstr ""
+
+msgid "доставка"
+msgstr ""
+
+msgid "Франшиза"
+msgstr ""
+
+msgid "Карьера"
+msgstr ""
+
+msgid "Блог"
+msgstr ""
+
+msgid "подпишись на нашу суперсекретную рассылку"
+msgstr ""
+
+msgid "подписаться"
+msgstr ""
+
+msgid "заказать"
+msgstr ""
+
+msgid "забрать из ресторана"
+msgstr ""
+
+msgid "доставка курьером"
+msgstr ""
+
+msgid "Имя"
+msgstr ""
+
+msgid "Телефон"
+msgstr ""
+
+msgid "Сохраненные адреса"
+msgstr ""
+
+msgid "Проверить зону доставки"
+msgstr ""
+
+msgid "Улица"
+msgstr ""
+
+msgid "Дом"
+msgstr ""
+
+msgid "Подьезд"
+msgstr ""
+
+msgid "Домофон"
+msgstr ""
+
+msgid "Этаж"
+msgstr ""
+
+msgid "Квартира"
+msgstr ""
+
+msgid "Примечание"
+msgstr ""
+
+msgid "Наличные"
+msgstr ""
+
+msgid "Картой"
+msgstr ""
+
+msgid "Сдача с"
+msgstr ""
+
+msgid "Кол-во персон"
+msgstr ""
+
+msgid "перезвонить вам?"
+msgstr ""
+
+msgid "Да"
+msgstr ""
+
+msgid "Нет"
+msgstr ""
+
+msgid "Введите Ваш ID"
+msgstr ""
+
+msgid "Добавить комментарии к заказу?"
+msgstr ""
+
+msgid "Правила доставки"
+msgstr ""
+
+msgid "сумма:"
+msgstr ""
+
+msgid "доставка:"
+msgstr ""
+
+msgid "к оплате:"
+msgstr ""
+
+msgid "зарегистрироваться"
+msgstr ""
+
+msgid "войти"
+msgstr ""
+
+msgid "С помощью"
+msgstr ""
+
+msgid "или"
+msgstr ""
+
+msgid "Забыли пароль?"
+msgstr ""
+
+msgid "Неверный логин или пароль"
+msgstr ""
+
+msgid "Пароль"
+msgstr ""
+
+msgid "Выйти"
+msgstr ""
+
+msgid "Личный кабинет"
+msgstr ""
+
+msgid "отправить"
+msgstr ""
+
+msgid "Отменить"
+msgstr ""
+
+msgid "Востановление пароля"
+msgstr ""
+
+msgid "Для востановления пароля введите Ваш E-mail."
+msgstr ""
+
+msgid "Письмо со ссылкой для изменения пароля будет отправлено Вам на почту."
+msgstr ""
+
+msgid "личные данные"
+msgstr ""
+
+msgid "применить"
+msgstr ""
+
+msgid "Старый пароль"
+msgstr ""
+
+msgid "Новый пароль"
+msgstr ""
+
+msgid "Мои адреса"
+msgstr ""
+
+msgid "Мои заказы"
+msgstr ""
+
+msgid "Любимые блюда"
+msgstr ""
+
+msgid "улица"
+msgstr ""
+
+msgid "Адрес"
+msgstr ""
+
+msgid "дом"
+msgstr ""
+
+msgid "квартира"
+msgstr ""
+
+msgid "этаж"
+msgstr ""
+
+msgid "подъезд"
+msgstr ""
+
+msgid "домофон"
+msgstr ""
+
+msgid "Добавить"
+msgstr ""
+
+msgid "номер заказа"
+msgstr ""
+
+msgid "дата"
+msgstr ""
+
+msgid "заказ"
+msgstr ""
+
+msgid "Всего"
+msgstr ""
+
+msgid "Повторить заказ"
+msgstr ""
+
+msgid ""
+"Извините, повторить заказ невозможно, часть блюд больше не представлена в "
+"меню"
+msgstr ""
+
+msgid "Заказов пока нет"
+msgstr ""
+
+msgid "Любимых блюд пока нет"
+msgstr ""
+
+msgid "Изменить"
+msgstr ""
+
+msgid "Выберите цвет личного кабинета:"
+msgstr ""
+
+msgid "подробнее"
+msgstr ""
+
+msgid "загрузить еще"
+msgstr ""
+
+msgid "Вход"
+msgstr ""
+
+msgid "вегетарианская еда"
+msgstr ""
+
+msgid "сезонное блюдо"
+msgstr ""
+
+msgid "Предложение действует ежедневно по будням"
+msgstr ""
+
+msgid "блюда"
+msgstr ""
+
+msgid "напиток"
+msgstr ""
+
+msgid "до"
+msgstr ""
+
+msgid "грн"
+msgstr ""
+
+msgid "вернуться"
+msgstr ""
+
+msgid "с"
+msgstr ""
+
+msgid "товар(ы) в корзине"
+msgstr ""
+
+msgid "к оплате"
+msgstr ""
+
+msgid "г. Киев"
+msgstr ""
+
+msgid "Информация о заказе"
+msgstr ""
+
+msgid "Общая информация"
+msgstr ""
+
+msgid "дата заказа"
+msgstr ""
+
+msgid "Дата доставки"
+msgstr ""
+
+msgid "Сумма"
+msgstr ""
+
+msgid "Доставка"
+msgstr ""
+
+msgid "доставка бесплатная"
+msgstr ""
+
+msgid "К оплате"
+msgstr ""
+
+msgid "Ваш ID"
+msgstr ""
+
+msgid "Способ оплаты"
+msgstr ""
+
+msgid "Перезвонить?"
+msgstr ""
+
+msgid "Комментарий к заказу"
+msgstr ""
+
+msgid "Спасибо, что Вы с нами! До скорой встречи!"
+msgstr ""
+
+msgid "Поздравляем!<br>Подписка успешно оформлена!"
+msgstr ""
+
+msgid "рассказать друзьям"
+msgstr ""
+
+msgid "вернуться к списку"
+msgstr ""
+
+msgid "хочу еще"
+msgstr ""
+
+msgid "В корзине"
+msgstr ""
+
+msgid "в корзине"
+msgstr ""
+
+msgid "товар"
+msgstr ""
+
+msgid "товары"
+msgstr ""
+
+msgid "товаров"
+msgstr ""
+
+msgid "товара"
+msgstr ""
+
+msgid "Спасибо! Ваше сообщение отправлено."
+msgstr ""
+
+msgid "Ваше резюме успешно отправлено!"
+msgstr ""
+
+msgid "ru"
+msgstr ""
+
+msgid "часы"
+msgstr ""
+
+msgid "минуты"
+msgstr ""
+
+msgid ""
+"Извините, повторить заказ невозможно, часть блюд больше не представлена в "
+"меню."
+msgstr ""
+
+msgid "Восстановление пароля"
+msgstr ""
+
+msgid "Спасибо за заказ!"
+msgstr ""
+
+msgid "Наличными"
+msgstr ""
+
+msgid "авторизация"
+msgstr ""
+
+msgid "смотреть на карте"
+msgstr ""
+
+msgid "Перейдите по ссылке для сброса пароля"
+msgstr ""
+
+msgid "Сброс пароля"
+msgstr ""
+
+msgid "На ваш Email отправлено письмо"
+msgstr ""
+
+msgid "Email не зарегистрирован"
+msgstr ""
+
+msgid "Меню в pdf"
+msgstr ""
+
+msgid "Подъезд"
+msgstr ""
+
+msgid "Бизнес-ланч"
+msgstr ""
+
+msgid "К оплате c учётом скидки -10%:"
+msgstr ""
+
+msgid "Извините, сейчас доставка не работает! Закажите что-то вкусное завтра."
+msgstr ""
+
+msgid ""
+"с <span>12.00</span> до <span>16.00</span> действует скидка <span>10%</span> "
+"в будние дни на все наше меню."
+msgstr ""
+
+msgid "острая еда"
+msgstr ""
+
+msgid "Продукты"
+msgstr "Меню"

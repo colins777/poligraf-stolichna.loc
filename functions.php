@@ -1,4 +1,14 @@
 <?php
+
+// Exit if accessed directly
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+
+require_once get_template_directory() . '/framework/init.php';
+new stolTheme;
+
 add_action( 'wp_enqueue_scripts', 'my_custom_scripts', 100 );
 function my_custom_scripts()
 {
@@ -34,6 +44,24 @@ add_filter('wpcf7_form_elements', function($content) {
     return $content;
 });
 
-//define('THEME_PATH', get_template_directory_uri() . '/img/logo_clear.png');
+
+add_theme_support('menus');
+
+//add class to menu li item
+function add_classes_on_li($classes) {
+    $classes[] = 'header-menu__item';
+    return $classes;
+}
+add_filter('nav_menu_css_class','add_classes_on_li',1,3);
+
+//add class to menu a item
+function add_menu_link_class($atts)
+{
+    $atts['class'] = 'header-menu__link';
+    return $atts;
+}
+add_filter('nav_menu_link_attributes', 'add_menu_link_class', 1, 3);
+
+
 
 define('THEME_PATH_IMG', get_template_directory_uri() . '/img/');

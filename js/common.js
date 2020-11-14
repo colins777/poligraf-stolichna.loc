@@ -1,14 +1,22 @@
 $(document).ready(function () {
 
-	let sandwich = function() {
-		$(document).on('click', '.sandwich', function () {
-			$(this).toggleClass('sandwich--active');
+    let sandwich = function() {
+        $(document).on('click', '.mobile-btn-wrap', function () {
+            $('.sandwich').toggleClass('sandwich--active');
 
-			$('.header-menu').toggle("slow");
-			$('.header-menu').css('left', 0);
+            if (!($('.header-bottom').hasClass('header-bottom-show'))) {
+                $('.header-bottom').addClass('header-bottom-show');
+                $('body').css({'overflow-y' : 'hidden'});
+            }
+            else {
+                $('.header-bottom').removeClass('header-bottom-show');
+                $('body').css({'overflow-y' : 'auto'});
 
-		});
-	}
+            }
+            //$('.mobile-btn-wrap').css({'width' : '290px'});
+
+        });
+    };
 
     $('.header-slider').slick({
         dots: true,
@@ -41,11 +49,6 @@ $(document).ready(function () {
 		type: 'inline'
 	});
 
-
-
-
     sandwich();
-
-
 });
 

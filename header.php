@@ -32,7 +32,14 @@
 
 <!-- Custom HTML -->
 
-<header>
+<header class="header">
+    <div class="mobile-btn-wrap">
+        <div class="sandwich">
+            <div class="sandwich__line sandwich__line--top"></div>
+            <div class="sandwich__line sandwich__line--middle"></div>
+            <div class="sandwich__line sandwich__line--bottom"></div>
+        </div>
+    </div>
     <div class="container">
         <div class="header-wrap">
             <div class="header-top">
@@ -60,23 +67,42 @@
                 </div>
 
                 <div class="header-btn">
-                    <a href="#" class="btn">Оставить заявку</a>
+                    <a href="#callback" class="btn">Оставить заявку</a>
                 </div>
             </div> <!--header-top-->
         </div> <!--container-->
     </div>
     <nav class="header-bottom">
         <div class="container">
-            <ul class="header-menu">
-                <li class="header-menu__item"><a class="header-menu__link" href="">Главная</a></li>
-                <li class="header-menu__item"><a class="header-menu__link" href="">О нас</a></li>
-                <li class="header-menu__item"><a class="header-menu__link" href="">Продукция</a></li>
-                <li class="header-menu__item"><a class="header-menu__link" href="">Наши клиенты</a></li>
-                <li class="header-menu__item"><a class="header-menu__link" href="">Оборудование и технологии</a></li>
-                <li class="header-menu__item"><a class="header-menu__link" href="">Контакты</a></li>
-                <li class="header-menu__item"><a class="header-menu__link" href="">Комплексные решения</a></li>
-                <li class="header-menu__item"><a class="header-menu__link" href="">Новости</a></li>
-            </ul>
-        </div>
+<!--            <ul class="header-menu">-->
+<!--                <li class="header-menu__item"><a class="header-menu__link" href="#">Главная</a></li>-->
+<!--                <li class="header-menu__item"><a class="header-menu__link" href="#">О нас</a></li>-->
+<!--                <li class="header-menu__item"><a class="header-menu__link" href="#">Продукция</a></li>-->
+<!--                <li class="header-menu__item"><a class="header-menu__link" href="#">Наши клиенты</a></li>-->
+<!--                <li class="header-menu__item"><a class="header-menu__link" href="#">Оборудование и технологии</a></li>-->
+<!--                <li class="header-menu__item"><a class="header-menu__link" href="#">Контакты</a></li>-->
+<!--                <li class="header-menu__item"><a class="header-menu__link" href="#">Комплексные решения</a></li>-->
+<!--                <li class="header-menu__item"><a class="header-menu__link" href="#">Новости</a></li>-->
+<!--            </ul>-->
+            <?php wp_nav_menu( array(
+
+                'container'       => 'ul',
+                //'container_class' => 'header-menu',
+                'container_id'    => '',
+                'menu_class'      => 'header-menu',
+                'menu_id'         => '',
+                'echo'            => true,
+                'fallback_cb'     => 'wp_page_menu',
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                'depth'           => 0,
+                'walker'          => '',
+            ) );
+
+            ?>
+        </div> <!--container-->
     </nav>
 </header>

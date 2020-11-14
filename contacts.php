@@ -7,29 +7,29 @@
 <section class="page-contacts">
     <div class="container">
         <h1>Контакты</h1>
-
         <div class="page-contacts__wrap">
             <div class="page-contacts__con">
                 <div class="phones-wrap">
                     <span class="footer-address__name"><img class="contact-icon" src="//localhost:3000/wp-content/themes/stolichna/img//icons/phone-square-solid.svg" alt="phone">Наши телефоны: </span>
-                    <a class="phones-item" href="tel:044 593-79-40">044 593-79-40</a>
-                    <a class="phones-item" href="tel:044 593-79-41">044 593-79-41</a>
-                    <a class="phones-item" href="tel:044 593-79-42">044 593-79-42</a>
+                    <div class="phones-items">
+                        <a class="phones-item" href="tel:044 593-79-40">044 593-79-40</a>
+                        <a class="phones-item" href="tel:044 593-79-41">044 593-79-41</a>
+                        <a class="phones-item" href="tel:044 593-79-42">044 593-79-42</a>
+                    </div>
                 </div>
 
                 <div class="email-wrap">
                     <span class="footer-address__name"><img class="contact-icon"
                                                             src="<?php echo THEME_PATH_IMG . '/icons/envelope-solid.svg'; ?>"
                                                             alt="email">E-mail: </span>
-
                     <a class="mail-item" href="#">sale@stolichnaya.kiev.ua</a>
                 </div>
 
-                <div class="addres">
+                <div class="address">
                     <span class="footer-address__name"><img class="contact-icon"
                                                             src="<?php echo THEME_PATH_IMG . '/icons/map-marked-solid.svg'; ?>"
                                                             alt="email">Адрес: </span>
-                    <span class="addres-title">г. Киев, ул. Фрунзе, 82</span>
+                    <span class="address-title">г. Киев, ул. Фрунзе, 82</span>
                 </div>
 
                 <div class="schedule">

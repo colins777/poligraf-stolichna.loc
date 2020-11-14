@@ -1,0 +1,466 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CMB2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/cmb2\n"
+"POT-Creation-Date: 2016-10-26 15:12+0000\n"
+"PO-Revision-Date: Mon Mar 18 2019 16:14:35 GMT+0200 (за східноєвропейським "
+"стандартним часом)\n"
+"Last-Translator: Simple <romina.vakulenko@gmail.com>\n"
+"Language-Team: English (United Kingdom) (http://www.transifex.com/wp-"
+"translations/cmb2/language/en_GB/)\n"
+"Language: English\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Textdomain-Support: yes\n"
+"X-Loco-Target-Locale: en_US\n"
+"X-Poedit-SearchPath-0: ."
+
+msgid "острая еда"
+msgstr "spicy food"
+
+msgid "О нас"
+msgstr "About us"
+
+msgid "Меню"
+msgstr "Menu"
+
+msgid "Кейтеринг"
+msgstr "Catering"
+
+msgid "Контакты"
+msgstr "Contact"
+
+msgid "Принципы нашей работы"
+msgstr "Principles of our work"
+
+msgid "Взгляд изнутри"
+msgstr "An outward glance"
+
+msgid "Из первых уст"
+msgstr "Firsthand"
+
+msgid "Продукты"
+msgstr "Menu"
+
+msgid "Вегетарианская еда"
+msgstr "Vegetarian food"
+
+msgid "Сезонное блюдо"
+msgstr "Seasonal dishes"
+
+msgid "Карта доставки"
+msgstr "Delivery area"
+
+msgid "доставка"
+msgstr "Delivery"
+
+msgid "Франшиза"
+msgstr "Franchise"
+
+msgid "Карьера"
+msgstr "Career"
+
+msgid "Блог"
+msgstr "Blog"
+
+msgid "подпишись на нашу суперсекретную рассылку"
+msgstr "Subscribe to our highly-secret mailout"
+
+msgid "подписаться"
+msgstr "Subscribe"
+
+msgid "заказать"
+msgstr "Order"
+
+msgid "забрать из ресторана"
+msgstr "Take away"
+
+msgid "доставка курьером"
+msgstr "Courier delivery"
+
+msgid "Имя"
+msgstr "Name"
+
+msgid "Телефон"
+msgstr "Phone"
+
+msgid "Сохраненные адреса"
+msgstr "Address"
+
+msgid "Проверить зону доставки"
+msgstr "Check the delivery area"
+
+msgid "Улица"
+msgstr "Street"
+
+msgid "Дом"
+msgstr "Building"
+
+msgid "Подьезд"
+msgstr "Entrance"
+
+msgid "Домофон"
+msgstr "Intercom"
+
+msgid "Этаж"
+msgstr "Floor"
+
+msgid "Квартира"
+msgstr "Apartment"
+
+msgid "Примечание"
+msgstr "Note"
+
+msgid "Наличные"
+msgstr "Cash"
+
+msgid "Картой"
+msgstr "Card"
+
+msgid "Сдача с"
+msgstr "Change from"
+
+msgid "Кол-во персон"
+msgstr "Number of people"
+
+msgid "перезвонить вам?"
+msgstr "Call you back?"
+
+msgid "Да"
+msgstr "Yes"
+
+msgid "Нет"
+msgstr "Now"
+
+msgid "Введите Ваш ID"
+msgstr "Enter your ID"
+
+msgid "Добавить комментарии к заказу?"
+msgstr "Add comments to the order?"
+
+msgid "Правила доставки"
+msgstr "Rules of delivery"
+
+msgid "сумма:"
+msgstr "total:"
+
+msgid "доставка:"
+msgstr "delivery:"
+
+msgid "к оплате:"
+msgstr "for payment:"
+
+msgid "зарегистрироваться"
+msgstr "Create account"
+
+msgid "войти"
+msgstr "Log in"
+
+msgid "С помощью"
+msgstr "Using"
+
+msgid "или"
+msgstr "Or"
+
+msgid "Забыли пароль?"
+msgstr "Forgot password?"
+
+msgid "Неверный логин или пароль"
+msgstr "Wrong name or password"
+
+msgid "Пароль"
+msgstr "Password"
+
+msgid "Выйти"
+msgstr "Log out"
+
+msgid "Личный кабинет"
+msgstr "Account"
+
+msgid "отправить"
+msgstr "send"
+
+msgid "Отменить"
+msgstr "cancel"
+
+msgid "Востановление пароля"
+msgstr "Password reset"
+
+msgid "Для востановления пароля введите Ваш E-mail."
+msgstr "To reset your password enter your E-mail."
+
+msgid "Письмо со ссылкой для изменения пароля будет отправлено Вам на почту."
+msgstr "A letter with a link to change your password will be sent to you in e-mail."
+
+msgid "личные данные"
+msgstr "Personal information"
+
+msgid "применить"
+msgstr "Save changes"
+
+msgid "Старый пароль"
+msgstr "Old password"
+
+msgid "Новый пароль"
+msgstr "New password"
+
+msgid "Мои адреса"
+msgstr "My addresses"
+
+msgid "Мои заказы"
+msgstr "My orders"
+
+msgid "Любимые блюда"
+msgstr "Favorite dishes"
+
+msgid "улица"
+msgstr "Street"
+
+msgid "Адрес"
+msgstr "Address"
+
+msgid "дом"
+msgstr "Building"
+
+msgid "квартира"
+msgstr "Apartment"
+
+msgid "этаж"
+msgstr "Floor"
+
+msgid "подъезд"
+msgstr "Entrance"
+
+msgid "домофон"
+msgstr "Intercom"
+
+msgid "Добавить"
+msgstr "Add"
+
+msgid "номер заказа"
+msgstr "Order ID"
+
+msgid "дата"
+msgstr "date"
+
+msgid "заказ"
+msgstr "order"
+
+msgid "Всего"
+msgstr "Total"
+
+msgid "Повторить заказ"
+msgstr "Repeat the order"
+
+msgid ""
+"Извините, повторить заказ невозможно, часть блюд больше не представлена в "
+"меню"
+msgstr "Sorry, it's impossible"
+
+msgid "Заказов пока нет"
+msgstr "No saved orders"
+
+msgid "Любимых блюд пока нет"
+msgstr "No saved favorite dishes"
+
+msgid "Изменить"
+msgstr "Change"
+
+msgid "Выберите цвет личного кабинета:"
+msgstr "Choose the color of your cabinet:"
+
+msgid "подробнее"
+msgstr "read"
+
+msgid "загрузить еще"
+msgstr "load more"
+
+msgid "Вход"
+msgstr "Login"
+
+msgid "вегетарианская еда"
+msgstr "Vegetarian food"
+
+msgid "сезонное блюдо"
+msgstr "Seasonal dishes"
+
+msgid "Предложение действует ежедневно по будням"
+msgstr "Special weekdays offer"
+
+msgid "блюда"
+msgstr "dishes"
+
+msgid "напиток"
+msgstr "drink"
+
+msgid "до"
+msgstr "to"
+
+msgid "грн"
+msgstr "UAH"
+
+msgid "вернуться"
+msgstr "back"
+
+msgid "с"
+msgstr "from"
+
+msgid "товар(ы) в корзине"
+msgstr "good(-s) in bag"
+
+msgid "к оплате"
+msgstr "Total"
+
+msgid "г. Киев"
+msgstr "Kiev"
+
+msgid "Информация о заказе"
+msgstr "Information about order"
+
+msgid "Общая информация"
+msgstr "General information"
+
+msgid "дата заказа"
+msgstr "Оrder date"
+
+msgid "Дата доставки"
+msgstr "Delivery date"
+
+msgid "Сумма"
+msgstr "Sum"
+
+msgid "Доставка"
+msgstr "Delivery"
+
+msgid "доставка бесплатная"
+msgstr "delivery is free"
+
+msgid "К оплате"
+msgstr "Total"
+
+msgid "Ваш ID"
+msgstr "Your ID"
+
+msgid "Способ оплаты"
+msgstr "Pay method"
+
+msgid "Перезвонить?"
+msgstr "Call?"
+
+msgid "Комментарий к заказу"
+msgstr "Note"
+
+msgid "Спасибо, что Вы с нами! До скорой встречи!"
+msgstr "Thank you for being with us! See you soon!"
+
+msgid "Поздравляем!<br>Подписка успешно оформлена!"
+msgstr "Congratulations!<br>Your subscription was successful!"
+
+msgid "рассказать друзьям"
+msgstr "share with friends"
+
+msgid "вернуться к списку"
+msgstr "back to the list"
+
+msgid "хочу еще"
+msgstr "more"
+
+msgid "В корзине"
+msgstr "In bag"
+
+msgid "в корзине"
+msgstr "in bag"
+
+msgid "товар"
+msgstr "good"
+
+msgid "товары"
+msgstr "goods"
+
+msgid "товаров"
+msgstr "goods"
+
+msgid "товара"
+msgstr "goods"
+
+msgid "Спасибо! Ваше сообщение отправлено."
+msgstr "Thank you! Your message has been sent."
+
+msgid "Ваше резюме успешно отправлено!"
+msgstr "Your CV has been sent!"
+
+msgid "ru"
+msgstr "en"
+
+msgid "часы"
+msgstr "hours"
+
+msgid "минуты"
+msgstr "minutes"
+
+msgid ""
+"Извините, повторить заказ невозможно, часть блюд больше не представлена в "
+"меню."
+msgstr "Sorry, you can not repeat the order. Some dishes are not on the menu."
+
+msgid "Восстановление пароля"
+msgstr "Reset password"
+
+msgid "Спасибо за заказ!"
+msgstr "Thank you for your order!"
+
+msgid "Наличными"
+msgstr "Cash"
+
+msgid "авторизация"
+msgstr "authorization"
+
+msgid "смотреть на карте"
+msgstr "look at the map"
+
+msgid "Перейдите по ссылке для сброса пароля"
+msgstr "Click the link to reset your password"
+
+msgid "Сброс пароля"
+msgstr "Reset password"
+
+msgid "На ваш Email отправлено письмо"
+msgstr "Check your Email please"
+
+msgid "Email не зарегистрирован"
+msgstr "Email is not registered"
+
+msgid "Меню в pdf"
+msgstr "Menu in pdf"
+
+msgid "Подъезд"
+msgstr "Entrance"
+
+msgid "Бизнес-ланч"
+msgstr "Lunch time "
+
+msgid "К оплате c учётом скидки -10%:"
+msgstr "The  payment includes 10% discount."
+
+msgid "Извините, сейчас доставка не работает! Закажите что-то вкусное завтра."
+msgstr "Sorry, the delivery doesn't work now. Order our tasty dishes tomorrow."
+
+msgid ""
+"с <span>12.00</span> до <span>16.00</span> действует скидка <span>10%</span> "
+"в будние дни на все наше меню."
+msgstr ""
+"There is <span>10%</span> discount on all menu from <span>12.00</span> till "
+"<span>16.00</span> on weekdays."
+
+msgid "Доставка осуществляется во Вторник, Четверг и Субботу. Заказать можно во Вторник, Четверг, Воскресенье"
+msgstr "Delivery is carried out on Tuesday, Thursday and Saturday. You can order on Tuesday, Thursday, Sunday"
