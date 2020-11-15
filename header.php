@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="header-btn">
-                    <a href="#callback" class="btn">Оставить заявку</a>
+                    <a href="#callback" class="btn"><?php _e( 'Оставить заявку', 'stolichna' ); ?></a>
                 </div>
             </div> <!--header-top-->
         </div> <!--container-->

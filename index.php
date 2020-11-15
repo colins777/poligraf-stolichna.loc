@@ -2,7 +2,7 @@
 
 
 <div class="header-slider">
-    <div class="header-slider__item" style="background-image: url(<?php echo THEME_PATH_IMG . 'slider/farba.jpg'; ?>)">
+    <div class="header-slider__item" style="background-image: url(<?php echo THEME_PATH_IMG . 'slider/farba_crop.jpg'; ?>)">
         <div class="header-slider__wrap">
             <div class="container container--relative">
                 <div class="header-slider__content">
@@ -24,7 +24,7 @@
             </div>
         </div> <!-- header-slider__item -->
 
-    <div class="header-slider__item" style="background-image: url(<?php echo THEME_PATH_IMG . 'slider/2.jpg'; ?>)">
+    <div class="header-slider__item" style="background-image: url(<?php echo THEME_PATH_IMG . 'slider/farba_crop.jpg'; ?>)">
         <div class="header-slider__wrap">
             <div class="container container--relative">
                 <div class="header-slider__content">
@@ -38,7 +38,7 @@
 
 <section class="about">
     <div class="container">
-        <h1>Добро пожаловать в «Типографию «Столичная»</h1>
+        <h1 class="blue-line">Добро пожаловать в «Типографию «Столичная»</h1>
         <div class="about-text"><p>Наша мисия – сделать Клиента счастливым , постоянно совершенствуя спектр услуг.</p>
             <p>Именно поэтому, наши Клиенты ласково называют нас "Столичная". У нас Вы найдете полное понимание, профессиональный подход  и оперативное решение нестандартных  задач.</p>
             <p>Типография Столичная успешно работает более 10 лет на рынке Украины имея полный замкнутый цикл производства. За годы плодотворной  работы,  мы освоили печать на бумаге, картонах, пленке Oracal, пластике (ПВХ, акриле) и многих других декоративных материалах  , включая  дерево.</p>
@@ -115,17 +115,47 @@
 
 <section class="clients">
     <div class="container">
-        <h1>НАши клиенты</h1>
+        <h1 class="blue-line">Наши клиенты</h1>
         <div class="clients-wrap">
             <div class="clients-item">
                 <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'adv/quality.png'; ?>" alt="advantages">
+                    <img src="<?php echo THEME_PATH_IMG . 'clients/avk.jpg'; ?>" alt="advantages">
                 </div>
             </div> <!--clients-item-->
 
             <div class="clients-item">
                 <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/nissan.jpg'; ?>" alt="advantages">
+                    <img src="<?php echo THEME_PATH_IMG . 'clients/coca-cola-logo.jpg'; ?>" alt="advantages">
+                </div>
+            </div> <!--clients-item-->
+
+            <div class="clients-item">
+                <div class="clients-img">
+                    <img src="<?php echo THEME_PATH_IMG . 'clients/global-logic.png'; ?>" alt="advantages">
+                </div>
+            </div> <!--clients-item-->
+
+            <div class="clients-item">
+                <div class="clients-img">
+                    <img src="<?php echo THEME_PATH_IMG . 'clients/kraft.png'; ?>" alt="advantages">
+                </div>
+            </div> <!--clients-item-->
+
+            <div class="clients-item">
+                <div class="clients-img">
+                    <img src="<?php echo THEME_PATH_IMG . 'clients/loreal.png'; ?>" alt="advantages">
+                </div>
+            </div> <!--clients-item-->
+
+            <div class="clients-item">
+                <div class="clients-img">
+                    <img src="<?php echo THEME_PATH_IMG . 'clients/metro-cash-carry.jpg'; ?>" alt="advantages">
+                </div>
+            </div> <!--clients-item-->
+
+            <div class="clients-item">
+                <div class="clients-img">
+                    <img src="<?php echo THEME_PATH_IMG . 'clients/avtocentr.png'; ?>" alt="advantages">
                 </div>
             </div> <!--clients-item-->
 
@@ -137,43 +167,13 @@
 
             <div class="clients-item">
                 <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'adv/quality.png'; ?>" alt="advantages">
+                    <img src="<?php echo THEME_PATH_IMG . 'clients/metro-cash-carry.jpg'; ?>" alt="advantages">
                 </div>
             </div> <!--clients-item-->
 
             <div class="clients-item">
                 <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'adv/quality.png'; ?>" alt="advantages">
-                </div>
-            </div> <!--clients-item-->
-
-            <div class="clients-item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/infiniti.png'; ?>" alt="advantages">
-                </div>
-            </div> <!--clients-item-->
-
-            <div class="clients-item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/schwarzkopf.jpg'; ?>" alt="advantages">
-                </div>
-            </div> <!--clients-item-->
-
-            <div class="clients-item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/infiniti.png'; ?>" alt="advantages">
-                </div>
-            </div> <!--clients-item-->
-
-            <div class="clients-item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'adv/quality.png'; ?>" alt="advantages">
-                </div>
-            </div> <!--clients-item-->
-
-            <div class="clients-item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/nissan.jpg'; ?>" alt="advantages">
+                    <img src="<?php echo THEME_PATH_IMG . 'clients/avk.jpg'; ?>" alt="advantages">
                 </div>
             </div> <!--clients-item-->
 
@@ -184,7 +184,7 @@
 
 <section class="products">
     <div class="container">
-        <h1>Печать и изготовление полиграфической продукции</h1>
+        <h1 class="blue-line">Печать и изготовление полиграфической продукции</h1>
         <div class="products-wrap">
             <div class="products-item">
                 <div class="products-img">

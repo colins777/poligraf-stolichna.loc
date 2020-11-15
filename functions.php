@@ -63,5 +63,12 @@ function add_menu_link_class($atts)
 add_filter('nav_menu_link_attributes', 'add_menu_link_class', 1, 3);
 
 
+//Add translate file
+add_action( 'after_setup_theme', 'stolTheme_setup');
+function stolTheme_setup(){
+    load_theme_textdomain( 'stolichna', get_template_directory() . '/languages' );
+}
+
+
 
 define('THEME_PATH_IMG', get_template_directory_uri() . '/img/');
