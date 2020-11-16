@@ -10,7 +10,7 @@
         <div class="page-contacts__wrap">
             <div class="page-contacts__con">
                 <div class="phones-wrap">
-                    <span class="footer-address__name"><img class="contact-icon" src="//localhost:3000/wp-content/themes/stolichna/img//icons/phone-square-solid.svg" alt="phone">Наши телефоны: </span>
+                    <span class="footer-address__name"><img class="contact-icon" src="<?php echo THEME_PATH_IMG . '/icons/phone-square-solid.svg'; ?>" alt="phone">Наши телефоны: </span>
                     <div class="phones-items">
                         <a class="phones-item" href="tel:044 593-79-40">044 593-79-40</a>
                         <a class="phones-item" href="tel:044 593-79-41">044 593-79-41</a>

@@ -20,13 +20,15 @@ class Products
             'id'           => 'product',
             'title'        => __( 'Настройки', \stolTheme::$theme_name ),
             'object_types' => array( 'page' ),
+
             'show_on'      => array(
                 'key'   => 'page-template',
-                'value' => 'products.php',
-               // 'value' => 'equipment.php',
+               'value' => array( 'products.php', 'equipment.php' ),
+               // 'key' => 'id', 'value' => array( 7, 112 )
             ),
             'show_names'   => true,
         );
+
 
         //Setup meta box
         $cmb = new_cmb2_box( $box_options );
