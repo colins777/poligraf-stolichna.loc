@@ -1288,6 +1288,7 @@ q {
 
 .page-contacts__form {
   width: 100%;
+  max-width: 700px;
 }
 
 .page-contacts__form .main-form {
@@ -1480,7 +1481,7 @@ q {
 .main-form textarea {
   font-size: 15px;
   width: 100%;
-  min-height: 130px;
+  height: 130px;
   resize: vertical;
 }
 
@@ -1507,7 +1508,7 @@ q {
   background-color: transparent;
 }
 
-.btn, main-form button {
+.btn, .wpcf7-form-control.wpcf7-submit.btn {
   min-width: 200px;
   padding: 20px;
   background-color: #0F1F86;
@@ -1523,7 +1524,7 @@ q {
   border: none;
 }
 
-.btn:hover, main-form button:hover {
+.btn:hover, .wpcf7-form-control.wpcf7-submit.btn:hover {
   text-decoration: none;
   color: #fff;
   background-color: #0c28bd;

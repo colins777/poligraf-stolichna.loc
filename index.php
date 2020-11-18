@@ -305,7 +305,7 @@
 
 <section class="home-form">
     <div class="container">
-        <h2 class="home-form__title">Оставьте заявку на расчет</h2>
+        <h2 class="home-form__title"><?php _e( 'Оставьте заявку на расчет', 'stolichna' ); ?></h2>
         <form class="main-form" action="">
             <div class="input-top">
                 <input class="input-top__name" type="text" placeholder="Ваше имя">

@@ -3,8 +3,6 @@
 ?>
 
 <?php get_header(); ?>
-
-
     <section class="prod-page">
         <div class="container">
             <h1>Оборудование и технологии</h1>
@@ -54,7 +52,6 @@
                 </div>
             </div> <!--prod-page__wrap-->
 
-
             <div class="prod-page__wrap">
                 <div class="prod-page__descr prod-page-item">
                     <h2>Листоподбор Theisen & Bonitz sprint 315</h2>
@@ -72,7 +69,6 @@
                     <?php echo do_shortcode('[foogallery id="25"]')?>
                 </div> <!--prod-page__gallery-->
             </div> <!--prod-page__wrap-->
-
 
             <div class="prod-page__wrap">
                 <div class="prod-page__gallery prod-page-item">
@@ -103,7 +99,6 @@
                 </div> <!--prod-page__gallery-->
             </div> <!--prod-page__wrap-->
 
-
             <div class="prod-page__wrap">
                 <div class="prod-page__gallery prod-page-item">
                     <?php /*the_post(); the_content(); */?>
@@ -114,25 +109,13 @@
                     <p>Рулонные ламинаторы KDFM - это высокоскоростные ламинаторы с возможностью ламинации с двух сторон, как матовой, так и глянцевой пленкой.</p>
                 </div>
             </div> <!--prod-page__wrap-->
-
-
         </div> <!--container-->
-
     </section>
 
     <section class="home-form">
         <div class="container">
-            <h2 class="home-form__title">Оставьте заявку на расчет</h2>
-            <form class="main-form" action="">
-                <div class="input-top">
-                    <input class="input-top__name" type="text" placeholder="Ваше имя">
-                    <input class="input-top__phone" type="text" placeholder="Ваш телефон">
-                </div>
-                <input type="email" placeholder="Email*">
-                <textarea name="vid-uslug" placeholder="Опишите ваш заказ. Например: буклет А4,бумага мелованая матовая, 150 гр., 4+4, 2 фальца  и т.п."></textarea>
-                <button type="submit" class="btn">Оставить заявку</button>
-                <!--<a href="#" class="btn">Оставить заявку</a>-->
-            </form>
+            <h2 class="home-form__title"><?php _e( 'Оставьте заявку на расчет', 'stolichna' ); ?></h2>
+            <?php echo do_shortcode('[contact-form-7 id="117" title="Оставить заявку Форма" html_class="main-form"]') ?>
         </div>
     </section>
 
