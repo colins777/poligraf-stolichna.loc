@@ -61,6 +61,10 @@ class stolTheme
         if ($this::$is_admin and current_user_can('administrator')) {
             require_once $this::$theme_path . '/inc/Products.php';
             new inc\Products();
+
+            require_once $this::$theme_path . '/inc/Clients.php';
+            new inc\Clients();
+
         }
     }
 }

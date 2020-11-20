@@ -6,7 +6,7 @@
 
     <section class="news-page">
         <div class="container">
-            <h1>Новости</h1>
+            <h1><?php the_title(); ?></h1>
 
             <div class="news-page__wrap">
                 <div class="fb-page" data-href="https://www.facebook.com/TeamSmartCode/" data-tabs="timeline"

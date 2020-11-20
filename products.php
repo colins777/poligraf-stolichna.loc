@@ -5,7 +5,7 @@
 <?php get_header(); ?>
     <section class="prod-page">
         <div class="container">
-            <h1>Наша продукция</h1>
+            <h1><?php the_title() ?></h1>
             <?php
             $products  = get_post_meta( get_the_ID(), 'products', true );
             foreach ($products as $product) :

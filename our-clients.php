@@ -8,73 +8,27 @@
     <div class="container">
         <h1><?php the_title(); ?></h1>
         <div class="clients-page__wrap">
+        <?php
+            $clients  = get_post_meta( get_the_ID(), 'clients', true );
+
+            foreach ($clients as $client) :
+                $image_test = wp_get_attachment_image( get_post_meta( get_the_ID(), 'clients', 1 ), 'medium' );
+                $image = $client["client_logo"];
+//                echo '<pre>';
+//               var_dump($image);
+//                echo '<pre>';
+            ?>
             <div class="clients-page__item">
                 <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/avk.jpg'; ?>" alt="advantages">
+                    <img src="<?php echo  $image; ?>" alt="clients">
                 </div>
                 <h2 class="clients-page__item-title">
-                    Кондитерська компанія АВК
+                    <!--Кондитерська компанія АВК-->
+                    <?php echo $client["client_name"]; ?>
                 </h2>
-                <p class="clients-page__item-descr">Центральний офіс «АВК» знаходиться в Києві, а основні виробничі потужності компанії зосереджені в Дніпрі. Продукція «АВК» експортується у понад 60 країн світу. Центральний офіс «АВК» знаходиться в Києві
-                </p>
+                <p class="clients-page__item-descr"><?php echo $client["text"]; ?></p>
             </div> <!--clients-page__item-->
-
-            <div class="clients-page__item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/metro-cash-carry.jpg'; ?>" alt="advantages">
-                </div>
-                <h2 class="clients-page__item-title">
-                    Кондитерська компанія АВК
-                </h2>
-                <p class="clients-page__item-descr">Центральний офіс «АВК» знаходиться в Києві, а основні виробничі потужності компанії зосереджені в Дніпрі. Продукція «АВК» експортується у понад 60 країн світу.
-                </p>
-            </div> <!--clients-page__item-->
-
-
-            <div class="clients-page__item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/avtocentr.png'; ?>" alt="advantages">
-                </div>
-                <h2 class="clients-page__item-title">
-                    Кондитерська компанія АВК
-                </h2>
-                <p class="clients-page__item-descr">Центральний офіс «АВК» знаходиться в Києві, а основні виробничі потужності компанії зосереджені в Дніпрі. Продукція «АВК» експортується у понад 60 країн світу.
-                </p>
-            </div> <!--clients-page__item-->
-
-            <div class="clients-page__item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/avk.jpg'; ?>" alt="advantages">
-                </div>
-                <h2 class="clients-page__item-title">
-                    Кондитерська компанія АВК
-                </h2>
-                <p class="clients-page__item-descr">Центральний офіс «АВК» знаходиться в Києві, а основні виробничі потужності компанії зосереджені в Дніпрі. Продукція «АВК» експортується у понад 60 країн світу.
-                </p>
-            </div> <!--clients-page__item-->
-
-            <div class="clients-page__item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/kraft.png'; ?>" alt="advantages">
-                </div>
-                <h2 class="clients-page__item-title">
-                    Кондитерська компанія АВК
-                </h2>
-                <p class="clients-page__item-descr">Центральний офіс «АВК» знаходиться в Києві, а основні виробничі потужності компанії зосереджені в Дніпрі. Продукція «АВК» експортується у понад 60 країн світу.
-                </p>
-            </div> <!--clients-page__item-->
-
-            <div class="clients-page__item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/coca-cola-logo.jpg'; ?>" alt="advantages">
-                </div>
-                <h2 class="clients-page__item-title">
-                    Кондитерська компанія АВК
-                </h2>
-                <p class="clients-page__item-descr">Центральний офіс «АВК» знаходиться в Києві, а основні виробничі потужності компанії зосереджені в Дніпрі. Продукція «АВК» експортується у понад 60 країн світу.
-                </p>
-            </div> <!--clients-page__item-->
-
+            <?php endforeach; ?>
         </div> <!--clients-page__wrap-->
     </div>
 </section>

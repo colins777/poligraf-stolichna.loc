@@ -1,3 +1,8 @@
+<?php
+//Template Name: MainPage
+?>
+
+
 <?php get_header(); ?>
 
 

@@ -6,7 +6,7 @@
 
 <section class="page-contacts">
     <div class="container">
-        <h1>Контакты</h1>
+        <h1><?php the_title(); ?></h1>
         <div class="page-contacts__wrap">
             <div class="page-contacts__con">
                 <div class="phones-wrap">

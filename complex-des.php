@@ -4,9 +4,12 @@
 
 <?php get_header(); ?>
 
+<section class="des-page">
+    <div class="container">
+        <h1><?php the_title(); ?></h1>
+    </div>
+</section>
 
-<div class="container">
-    TEST
-</div>
+
 
 <?php get_footer(); ?>
