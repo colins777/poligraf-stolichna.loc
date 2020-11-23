@@ -15,6 +15,10 @@
 			font-size: 16px
 		.mail-item
 			font-size: 16px
+	//Page contacts
+	.page-contacts
+		&__con
+			margin-right: 50px
 
 @media screen and (max-width: 1023px)
 	.header
@@ -25,6 +29,7 @@
 		&-top
 			flex-direction: column
 			height: auto
+			padding-top: 10px
 		&-bottom
 			background-color: #444444
 			position: absolute
@@ -46,9 +51,7 @@
 			margin-top: 30px
 		.container
 			padding: 20px 0
-			//border-bottom: 2px solid $accent
 	.lang-wrap
-		//height: 50px
 		flex-direction: row
 		& > *
 			&:not(:last-child)
@@ -58,7 +61,6 @@
 			left: calc(100% - 30px)
 			
 @media screen and (max-width: 768px)
-	
 	.footer
 		&-top
 			align-items: center
@@ -71,8 +73,19 @@
 		.phones-item
 			margin-left: 0
 			margin-right: 0
+			
+	.news-page
+		&__wrap
+			flex-direction: column
+			align-items: center
+			width: 100%
+		.fb-page
+			margin-right: 0
+			width: 100%
 
-@media screen and (max-width: 540px)
+@media screen and (max-width: 767px)
+	section
+		padding-top: 30px
 	h1
 		font-size: 30px
 		line-height: 35px
@@ -94,6 +107,8 @@
 			text-align: center
 			font-size: 15px
 			line-height: 16px
+	.about
+		padding-top: 50px
 	.adv
 		&-item
 			width: 100%
@@ -129,8 +144,97 @@
 			flex-direction: column
 		&-bottom__left
 			order: 2
+			
+	//About page
+	.about-page
+		&__wrap
+			padding-top: 0
+			
+	//Product PAge
+	.prod-page
+		&__wrap
+			padding-top: 20px
+			flex-direction: column
+		&-item
+			width: 100%
+			min-height: auto
+			h2
+				text-align: center
+				font-size: 20px
+				line-height: 25px
+		&__descr
+			order: 1
+		&__gallery
+			order: 2
+	//Clients Page
+	.clients-page
+		padding-top: 30px
+		&__wrap
+			padding-top: 0
+		&__item
+			width: 100%
+			&:not(:nth-child(3n+3))
+				&:before
+					content: none
+	.page-contacts
+		padding-top: 30px
+		background-color: $grey
+		&__wrap
+			flex-direction: column
+			padding-top: 20px
+		&__con
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin-right: 0
+		.footer-address__name
+			text-align: center
+		.phones-wrap
+			.phones-items
+				padding-left: 0
+				text-align: center
+				margin: 0 auto
+		.email-wrap
+			.mail-item
+				padding-left: 0
+		.address-title
+			padding-left: 0
+		.schedule-time
+			padding-left: 0
+			text-align: center
+		&__form
+			padding-top: 30px
+			
+	.home-form__title
+		font-size: 20px
+		line-height: 25px
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 600px)
 	h1
 		font-size: 20px
 		line-height: 25px
+	.header
+		&-btn
+			margin-top: 10px
+		.container
+			padding-bottom: 0
+		.contact-icon
+			display: none
+	.clients
+		&-item
+			height: 140px
+		&--img
+			height: 140px
+	.about
+		padding-top: 30px
+		&-text
+			margin-top: 30px
+	.about-page
+		&__title
+			font-size: 20px
+			line-height: 25px
+	//Button
+	.btn, .wpcf7-form-control.wpcf7-submit.btn
+		padding: 10px
+		font-size: 12px

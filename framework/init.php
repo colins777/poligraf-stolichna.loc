@@ -8,7 +8,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class stolTheme
 {
-
     /**
      * @var mixed|void
      * static дозволяє викликати власт чи метод без створ нового екземпляру класу в самому класі чи за межам класу
@@ -41,7 +40,7 @@ class stolTheme
         $this::$is_admin       = is_admin();
         $this::$filter_prefix  = 'stolTheme';
 
-        // Подключения библиотек
+        // Connection libs
         $this->load_libs();
 
         $this->activate_pages ();
@@ -52,6 +51,8 @@ class stolTheme
             // Connection CMB2 framework
             require_once $this::$libs_path . 'cmb2/init.php';
             require_once $this::$libs_path . 'cmb2-taxonomy/plugin.php';
+            require_once $this::$libs_path . 'redux-framework/ReduxCore/framework.php';
+            //require_once $this::$libs_path . 'redux-framework/sample/sample-config.php';
 
         }
     }
@@ -65,6 +66,14 @@ class stolTheme
             require_once $this::$theme_path . '/inc/Clients.php';
             new inc\Clients();
 
+            require_once $this::$theme_path . '/inc/redux/init.php';
+            new inc\redux\init();
+
+            //require_once $this::$theme_path . '/inc/OptionsPage.php';
+            //new inc\OptionsPage();
+
+
         }
     }
+
 }

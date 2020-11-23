@@ -1,3 +1,5 @@
+<?php $theme_options = get_option( 'stolTheme_option' ); ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -50,14 +52,19 @@
                 <div class="phones-wrap">
                     <img class="contact-icon" src="<?php echo THEME_PATH_IMG . '/icons/phone-square-solid.svg'; ?>"
                          alt="phone">
-                    <a class="phones-item" href="#">044 593-79-40</a>
-                    <a class="phones-item" href="#">044 593-79-41</a>
+                    <?php
+                    foreach ($theme_options['header_phones'] as $phone) : ?>
+                        <a class="phones-item" href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
+                    <?php endforeach;?>
+                    <!--<a class="phones-item" href="#">044 593-79-40</a>
+                    <a class="phones-item" href="#">044 593-79-41</a>-->
                 </div>
 
                 <div class="email-wrap">
                     <img class="contact-icon" src="<?php echo THEME_PATH_IMG . '/icons/envelope-solid.svg'; ?>"
                          alt="email">
-                    <a class="mail-item" href="#">sale@stolichnaya.kiev.ua</a>
+                    <!--<a class="mail-item" href="#">sale@stolichnaya.kiev.ua</a>-->
+                    <a class="mail-item" href="mailto:<?php echo $theme_options['email']; ?>"><?php echo $theme_options['email']; ?></a>
                 </div>
 
                 <div class="lang-wrap">

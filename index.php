@@ -11,8 +11,8 @@
         <div class="header-slider__wrap">
             <div class="container container--relative">
                 <div class="header-slider__content">
-                    <h2>Брошюры, буклеты, листовки</h2>
-                    <a class="header-slider__link" href="#">печать на собственном оборудовании печать на собственном оборудовании печать на собственном оборудовании<img src="<?php echo THEME_PATH_IMG . 'icons/arrow-right.png'; ?>" alt="arrow"></a>
+                    <h2>Папки и блокноты</h2>
+                    <a class="header-slider__link" href="<?php echo site_url() . '/products' ?>">Мы изготавливаем всевозможные виды блокнотов из ткани, кожи, пластика или картона. <img src="<?php echo THEME_PATH_IMG . 'icons/arrow-right.png'; ?>" alt="arrow"></a>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
                 <div class="container container--relative">
                     <div class="header-slider__content">
                         <h2>Брошюры, буклеты</h2>
-                        <a class="header-slider__link" href="#">печать на собственном оборудовании<img src="<?php echo THEME_PATH_IMG . 'icons/arrow-right.png'; ?>" alt="arrow"></a>
+                        <a class="header-slider__link" href="<?php echo site_url() . '/equipment' ?>">печать на собственном оборудовании<img src="<?php echo THEME_PATH_IMG . 'icons/arrow-right.png'; ?>" alt="arrow"></a>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
             <div class="container container--relative">
                 <div class="header-slider__content">
                     <h2>Брошюры, буклеты</h2>
-                    <a class="header-slider__link" href="#">печать на собственном оборудовании<img src="<?php echo THEME_PATH_IMG . 'icons/arrow-right.png'; ?>" alt="arrow"></a>
+                    <a class="header-slider__link" href="<?php echo site_url() . '/equipment' ?>">печать на собственном оборудовании<img src="<?php echo THEME_PATH_IMG . 'icons/arrow-right.png'; ?>" alt="arrow"></a>
                 </div>
             </div>
         </div>
@@ -311,16 +311,16 @@
 <section class="home-form">
     <div class="container">
         <h2 class="home-form__title"><?php _e( 'Оставьте заявку на расчет', 'stolichna' ); ?></h2>
-        <form class="main-form" action="">
-            <div class="input-top">
-                <input class="input-top__name" type="text" placeholder="Ваше имя">
-                <input class="input-top__phone" type="text" placeholder="Ваш телефон">
-            </div>
-            <input type="email" placeholder="Email*">
-            <textarea name="vid-uslug" placeholder="Опишите ваш заказ. Например: буклет А4,бумага мелованая матовая, 150 гр., 4+4, 2 фальца  и т.п."></textarea>
-            <button type="submit" class="btn">Оставить заявку</button>
-            <!--<a href="#" class="btn">Оставить заявку</a>-->
-        </form>
+<!--        <form class="main-form" action="">-->
+<!--            <div class="input-top">-->
+<!--                <input class="input-top__name" type="text" placeholder="Ваше имя">-->
+<!--                <input class="input-top__phone" type="text" placeholder="Ваш телефон">-->
+<!--            </div>-->
+<!--            <input type="email" placeholder="Email*">-->
+<!--            <textarea name="vid-uslug" placeholder="Опишите ваш заказ. Например: буклет А4,бумага мелованая матовая, 150 гр., 4+4, 2 фальца  и т.п."></textarea>-->
+<!--            <button type="submit" class="btn">Оставить заявку</button>-->
+<!--        </form>-->
+        <?php echo do_shortcode('[contact-form-7 id="117" title="Оставить заявку Форма" html_class="main-form"]') ?>
     </div>
 </section>
 

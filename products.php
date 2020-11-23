@@ -8,8 +8,9 @@
             <h1><?php the_title() ?></h1>
             <?php
             $products  = get_post_meta( get_the_ID(), 'products', true );
+            $counter = 0;
             foreach ($products as $product) :
-                $counter === 0;
+                //$counter === 0;
                 $counter++;
                 if ($counter % 2 !== 0) :
                     ?>
