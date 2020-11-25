@@ -12,11 +12,7 @@
             $clients  = get_post_meta( get_the_ID(), 'clients', true );
 
             foreach ($clients as $client) :
-                $image_test = wp_get_attachment_image( get_post_meta( get_the_ID(), 'clients', 1 ), 'medium' );
                 $image = $client["client_logo"];
-//                echo '<pre>';
-//               var_dump($image);
-//                echo '<pre>';
             ?>
             <div class="clients-page__item">
                 <div class="clients-img">

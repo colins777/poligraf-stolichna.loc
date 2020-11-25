@@ -66,6 +66,9 @@ class stolTheme
             require_once $this::$theme_path . '/inc/Clients.php';
             new inc\Clients();
 
+            require_once $this::$theme_path . '/inc/Main.php';
+            new inc\Main();
+
             require_once $this::$theme_path . '/inc/redux/init.php';
             new inc\redux\init();
 

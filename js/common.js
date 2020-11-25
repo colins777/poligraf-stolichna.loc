@@ -49,6 +49,20 @@ $(document).ready(function () {
 		type: 'inline'
 	});
 
+	/*Sticky footer*/
+    let stickyFooter = function () {
+        let windowHeight = $(window).outerHeight();
+        let headerHeight = $('.header').outerHeight();
+        let centerSection = $('.sticky-footer').outerHeight();
+        let footerHeight = $('.footer').outerHeight();
+        let newCenterSectionHeight =  windowHeight - headerHeight - footerHeight;
+
+        if (centerSection < newCenterSectionHeight) {
+            $('.sticky-footer').outerHeight(newCenterSectionHeight);
+        }
+    };
+
     sandwich();
+    stickyFooter();
 });
 

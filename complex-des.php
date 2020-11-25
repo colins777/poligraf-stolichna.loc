@@ -4,7 +4,7 @@
 
 <?php get_header(); ?>
 
-<section class="des-page">
+<section class="des-page sticky-footer">
     <div class="container">
         <h1><?php the_title(); ?></h1>
     </div>

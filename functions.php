@@ -63,7 +63,7 @@ function add_menu_link_class($atts)
 add_filter('nav_menu_link_attributes', 'add_menu_link_class', 1, 3);
 
 
-//Add translate file
+//Add translation for theme
 add_action( 'after_setup_theme', 'stolTheme_setup');
 function stolTheme_setup(){
     load_theme_textdomain( 'stolichna', get_template_directory() . '/languages' );

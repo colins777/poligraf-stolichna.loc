@@ -1,4 +1,4 @@
-# Translation of WordPress - 5.4.x in Ukrainian
+# Translation of WordPress - 5.4.x in English
 # This file is distributed under the same license as the WordPress - 5.4.x package.
 msgid ""
 msgstr ""
@@ -8,27 +8,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
-"Language: uk_UA\n"
+"Language: en_US\n"
 "Project-Id-Version: WordPress - 5.4.x\n"
 
-
 msgid "Оставить заявку"
-msgstr "Залишити заявку"
+msgstr "Contact Us"
 
 msgid "Наши клиенты"
-msgstr "Наші клієнти"
+msgstr "Our clients"
 
 msgid "Нашы телефоны"
-msgstr "Наші телефони"
+msgstr "Our phones"
 
 msgid "Наш адрес"
-msgstr "Наша адреса"
+msgstr "Our Address"
 
 msgid "Режим работы"
-msgstr "Режим роботи"
+msgstr "Schedule"
 
 msgid "Страница не найдена"
-msgstr "Сторінка не знайдена"
+msgstr "Page not found"
 
 msgid "Вернуться на Главную страницу сайта"
-msgstr "Повернутись на Головну сторінку сайту"
+msgstr "Back to main page"

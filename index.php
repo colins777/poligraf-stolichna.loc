@@ -7,38 +7,22 @@
 
 
 <div class="header-slider">
-    <div class="header-slider__item" style="background-image: url(<?php echo THEME_PATH_IMG . 'slider/farba_crop.jpg'; ?>)">
+    <?php $slides = get_post_meta(get_the_ID(), 'slider', true);
+         foreach ($slides as $slide) :
+            //$image_test = wp_get_attachment_image( get_post_meta( get_the_ID(), 'slider', 1 ), 'medium' );
+            $image = $slide["slide_image"];
+        ?>
+    <div class="header-slider__item" style="background-image: url(<?php echo $image; ?>)">
         <div class="header-slider__wrap">
             <div class="container container--relative">
                 <div class="header-slider__content">
-                    <h2>Папки и блокноты</h2>
-                    <a class="header-slider__link" href="<?php echo site_url() . '/products' ?>">Мы изготавливаем всевозможные виды блокнотов из ткани, кожи, пластика или картона. <img src="<?php echo THEME_PATH_IMG . 'icons/arrow-right.png'; ?>" alt="arrow"></a>
+                    <h2><?php echo $slide["slide_title"]; ?></h2>
+                    <a class="header-slider__link" href="<?php echo $slide["slide_link"] ?>"><?php echo $slide["slide_descr"] ?><img src="<?php echo THEME_PATH_IMG . 'icons/arrow-right.png'; ?>" alt="arrow"></a>
                 </div>
             </div>
         </div>
     </div> <!-- header-slider__item -->
-
-        <div class="header-slider__item" style="background-image: url(<?php echo THEME_PATH_IMG . 'slider/farba.jpg'; ?>)">
-            <div class="header-slider__wrap">
-                <div class="container container--relative">
-                    <div class="header-slider__content">
-                        <h2>Брошюры, буклеты</h2>
-                        <a class="header-slider__link" href="<?php echo site_url() . '/equipment' ?>">печать на собственном оборудовании<img src="<?php echo THEME_PATH_IMG . 'icons/arrow-right.png'; ?>" alt="arrow"></a>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- header-slider__item -->
-
-    <div class="header-slider__item" style="background-image: url(<?php echo THEME_PATH_IMG . 'slider/farba_crop.jpg'; ?>)">
-        <div class="header-slider__wrap">
-            <div class="container container--relative">
-                <div class="header-slider__content">
-                    <h2>Брошюры, буклеты</h2>
-                    <a class="header-slider__link" href="<?php echo site_url() . '/equipment' ?>">печать на собственном оборудовании<img src="<?php echo THEME_PATH_IMG . 'icons/arrow-right.png'; ?>" alt="arrow"></a>
-                </div>
-            </div>
-        </div>
-    </div> <!-- header-slider__item -->
+    <?php endforeach; ?>
 </div>
 
 <section class="about">
@@ -51,258 +35,72 @@
     </div>
 </section>
 
-
 <section class="adv">
     <div class="container">
         <div class="adv-wrap">
+            <?php
+            $advantages  = get_post_meta( get_the_ID(), 'advantages', true );
+                foreach ($advantages as $advantage) :
+            ?>
             <div class="adv-item">
                 <div class="adv-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'adv/peoples.png'; ?>" alt="advantages">
+                    <img src="<?php echo $advantage['advantages_icon']; ?>" alt="advantages">
                 </div> <!--adv-img-->
                 <div class="adv-text">
                     <h2 class="adv-title">
-                        100% клиентский сервис
+                        <?php echo $advantage['advantages_title']; ?>
                     </h2>
-                    <p class="adv-descr">
-                        Персональный менеджмент для каждого клиента, технические консультации по оптимизации полиграфии,
-                        подбору материалов, расчет заказа в кратчайшие сроки, доставка готовой продукции.
-                    </p> <!--adv-descr-->
+                    <div class="adv-descr">
+                        <?php echo $advantage['advantages_descr']; ?>
+                    </div> <!--adv-descr-->
                 </div> <!--adv-text-->
             </div> <!--adv-item-->
-
-            <div class="adv-item">
-                <div class="adv-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'adv/quality.png'; ?>" alt="advantages">
-                </div> <!--adv-img-->
-                <div class="adv-text">
-                    <h2 class="adv-title">
-                        Качество и оперативность
-                    </h2>
-                    <p class="adv-descr">
-                        Налаженный технологический процесс, высококвалифицированный персонал и современное оборудование
-                        позволяют типографии изготавливать высококачественную печатную продукцию в кратчайшие сроки.
-                    </p> <!--adv-descr-->
-                </div> <!--adv-text-->
-            </div> <!--adv-item-->
-
-            <div class="adv-item">
-                <div class="adv-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'adv/peoples.png'; ?>" alt="advantages">
-                </div> <!--adv-img-->
-                <div class="adv-text">
-                    <h2 class="adv-title">
-                        ТЕСТ 100% клиентский сервис
-                    </h2>
-                    <p class="adv-descr">
-                        Персональный менеджмент для каждого клиента, технические консультации по оптимизации полиграфии,
-                        подбору материалов, расчет заказа в кратчайшие сроки, доставка готовой продукции.
-                    </p> <!--adv-descr-->
-                </div> <!--adv-text-->
-            </div> <!--adv-item-->
-
-            <div class="adv-item">
-                <div class="adv-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'adv/quality.png'; ?>" alt="advantages">
-                </div> <!--adv-img-->
-                <div class="adv-text">
-                    <h2 class="adv-title">
-                        Проверка Качество тест тетстстс
-                    </h2>
-                    <p class="adv-descr">
-                        Налаженный технологический процесс, высококвалифицированный персонал и современное оборудование
-                        позволяют типографии изготавливать высококачественную печатную продукцию в кратчайшие сроки.
-                    </p> <!--adv-descr-->
-                </div> <!--adv-text-->
-            </div> <!--adv-item-->
+            <?endforeach; ?>
         </div> <!--adv-wrap-->
     </div> <!--container-->
 </section>
 
 <section class="clients">
     <div class="container">
-        <h1 class="blue-line">Наши клиенты</h1>
+        <h1 class="blue-line"><?php _e( 'Наши клиенты', 'stolichna' ); ?></h1>
         <div class="clients-wrap">
+            <?php
+            $clients  = get_post_meta( get_the_ID(), 'clients', true );
+            foreach ($clients as $client) :
+            ?>
             <div class="clients-item">
                 <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/avk.jpg'; ?>" alt="advantages">
+                    <img src="<?php echo $client['clients_logo']; ?>" alt="advantages">
                 </div>
             </div> <!--clients-item-->
-
-            <div class="clients-item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/coca-cola-logo.jpg'; ?>" alt="advantages">
-                </div>
-            </div> <!--clients-item-->
-
-            <div class="clients-item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/global-logic.png'; ?>" alt="advantages">
-                </div>
-            </div> <!--clients-item-->
-
-            <div class="clients-item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/kraft.png'; ?>" alt="advantages">
-                </div>
-            </div> <!--clients-item-->
-
-            <div class="clients-item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/loreal.png'; ?>" alt="advantages">
-                </div>
-            </div> <!--clients-item-->
-
-            <div class="clients-item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/metro-cash-carry.jpg'; ?>" alt="advantages">
-                </div>
-            </div> <!--clients-item-->
-
-            <div class="clients-item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/avtocentr.png'; ?>" alt="advantages">
-                </div>
-            </div> <!--clients-item-->
-
-            <div class="clients-item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/infiniti.png'; ?>" alt="advantages">
-                </div>
-            </div> <!--clients-item-->
-
-            <div class="clients-item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/metro-cash-carry.jpg'; ?>" alt="advantages">
-                </div>
-            </div> <!--clients-item-->
-
-            <div class="clients-item">
-                <div class="clients-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'clients/avk.jpg'; ?>" alt="advantages">
-                </div>
-            </div> <!--clients-item-->
-
-
+            <?php endforeach; ?>
         </div> <!--clients-wrap-->
     </div>
 </section>
 
 <section class="products">
     <div class="container">
-        <h1 class="blue-line">Печать и изготовление полиграфической продукции</h1>
+        <h1 class="blue-line">
+            <?php $section_title  = get_post_meta( get_the_ID(), 'products_section_title', true );
+              echo $section_title;
+            //var_dump($section_title);
+            ?>
+        </h1>
         <div class="products-wrap">
+            <?php $products  = get_post_meta( get_the_ID(), 'products', true );
+
+            foreach ($products as $product) :
+            ?>
             <div class="products-item">
                 <div class="products-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'products/broshyri.png'; ?>" alt="advantages">
+                    <img src="<?php echo $product['product_logo']; ?>" alt="advantages">
+
                 </div>
                 <h2 class="products-item__title">
-                    Печать брошюр
+                    <?php echo $product['product_title']; ?>
                 </h2>
             </div> <!--products-item-->
-
-            <div class="products-item">
-                <div class="products-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'products/bykleti-lifleti.png'; ?>" alt="advantages">
-                </div>
-                <h2 class="products-item__title">
-                    Печать буклетов
-                </h2>
-            </div> <!--products-item-->
-
-
-            <div class="products-item">
-                <div class="products-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'products/jyrnali-gazeti.png'; ?>" alt="advantages">
-                </div>
-                <h2 class="products-item__title">
-                    Печать журналов и газет
-                </h2>
-            </div> <!--products-item-->
-
-
-            <div class="products-item">
-                <div class="products-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'products/katalogi.png'; ?>" alt="advantages">
-                </div>
-                <h2 class="products-item__title">
-                    Печать каталогов
-                </h2>
-            </div> <!--products-item-->
-
-            <div class="products-item">
-                <div class="products-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'products/knigi.png'; ?>" alt="advantages">
-                </div>
-                <h2 class="products-item__title">
-                    Печать книг
-                </h2>
-            </div> <!--products-item-->
-
-
-            <div class="products-item">
-                <div class="products-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'products/listovki-gramoti.png'; ?>" alt="advantages">
-                </div>
-                <h2 class="products-item__title">
-                    Печать листовок
-                </h2>
-            </div> <!--products-item-->
-
-            <div class="products-item">
-                <div class="products-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'products/broshyri.png'; ?>" alt="advantages">
-                </div>
-                <h2 class="products-item__title">
-                    Печать брошюр
-                </h2>
-            </div> <!--products-item-->
-
-            <div class="products-item">
-                <div class="products-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'products/broshyri.png'; ?>" alt="advantages">
-                </div>
-                <h2 class="products-item__title">
-                    Печать брошюр
-                </h2>
-            </div> <!--products-item-->
-
-            <div class="products-item">
-                <div class="products-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'products/bykleti-lifleti.png'; ?>" alt="advantages">
-                </div>
-                <h2 class="products-item__title">
-                    Печать буклетов
-                </h2>
-            </div> <!--products-item-->
-
-
-            <div class="products-item">
-                <div class="products-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'products/jyrnali-gazeti.png'; ?>" alt="advantages">
-                </div>
-                <h2 class="products-item__title">
-                    Печать журналов и газет
-                </h2>
-            </div> <!--products-item-->
-
-            <div class="products-item">
-                <div class="products-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'products/bykleti-lifleti.png'; ?>" alt="advantages">
-                </div>
-                <h2 class="products-item__title">
-                    Печать буклетов
-                </h2>
-            </div> <!--products-item-->
-
-
-            <div class="products-item">
-                <div class="products-img">
-                    <img src="<?php echo THEME_PATH_IMG . 'products/jyrnali-gazeti.png'; ?>" alt="advantages">
-                </div>
-                <h2 class="products-item__title">
-                    Печать журналов и газет
-                </h2>
-            </div> <!--products-item-->
+            <?php endforeach; ?>
         </div> <!--products-wrap-->
     </div>
 </section>
@@ -311,15 +109,6 @@
 <section class="home-form">
     <div class="container">
         <h2 class="home-form__title"><?php _e( 'Оставьте заявку на расчет', 'stolichna' ); ?></h2>
-<!--        <form class="main-form" action="">-->
-<!--            <div class="input-top">-->
-<!--                <input class="input-top__name" type="text" placeholder="Ваше имя">-->
-<!--                <input class="input-top__phone" type="text" placeholder="Ваш телефон">-->
-<!--            </div>-->
-<!--            <input type="email" placeholder="Email*">-->
-<!--            <textarea name="vid-uslug" placeholder="Опишите ваш заказ. Например: буклет А4,бумага мелованая матовая, 150 гр., 4+4, 2 фальца  и т.п."></textarea>-->
-<!--            <button type="submit" class="btn">Оставить заявку</button>-->
-<!--        </form>-->
         <?php echo do_shortcode('[contact-form-7 id="117" title="Оставить заявку Форма" html_class="main-form"]') ?>
     </div>
 </section>

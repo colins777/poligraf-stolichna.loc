@@ -1,5 +1,6 @@
 <?php
 //Template Name: ContactsPage
+$theme_options = get_option( 'stolTheme_option' );
 ?>
 
 <?php get_header(); ?>
@@ -10,11 +11,12 @@
         <div class="page-contacts__wrap">
             <div class="page-contacts__con">
                 <div class="phones-wrap">
-                    <span class="footer-address__name"><img class="contact-icon" src="<?php echo THEME_PATH_IMG . '/icons/phone-square-solid.svg'; ?>" alt="phone">Наши телефоны: </span>
+                    <span class="footer-address__name"><img class="contact-icon" src="<?php echo THEME_PATH_IMG . '/icons/phone-square-solid.svg'; ?>" alt="phone"><?php _e( 'Нашы телефоны', 'stolichna' ); ?>:</span>
                     <div class="phones-items">
-                        <a class="phones-item" href="tel:044 593-79-40">044 593-79-40</a>
-                        <a class="phones-item" href="tel:044 593-79-41">044 593-79-41</a>
-                        <a class="phones-item" href="tel:044 593-79-42">044 593-79-42</a>
+                        <?php
+                        foreach ($theme_options['footer_phones'] as $phone) : ?>
+                            <a class="phones-item" href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
+                        <?php endforeach;?>
                     </div>
                 </div>
 
@@ -22,33 +24,29 @@
                     <span class="footer-address__name"><img class="contact-icon"
                                                             src="<?php echo THEME_PATH_IMG . '/icons/envelope-solid.svg'; ?>"
                                                             alt="email">E-mail: </span>
-                    <a class="mail-item" href="#">sale@stolichnaya.kiev.ua</a>
+                    <a class="mail-item"
+                       href="mailto:<?php echo $theme_options['email']; ?>"><?php echo $theme_options['email']; ?>
+                    </a>
                 </div>
 
                 <div class="address">
                     <span class="footer-address__name"><img class="contact-icon"
                                                             src="<?php echo THEME_PATH_IMG . '/icons/map-marked-solid.svg'; ?>"
-                                                            alt="email">Адрес: </span>
-                    <span class="address-title">г. Киев, ул. Фрунзе, 82</span>
+                                                            alt="email"><?php _e( 'Наш адрес', 'stolichna' ); ?>: </span>
+                    <span class="address-title"><?php echo $theme_options['phones_address']; ?></span>
                 </div>
 
                 <div class="schedule">
-                    <span class="schedule-title"><img class="contact-icon" src="<?php echo THEME_PATH_IMG . '/icons/clock-solid.svg'; ?>" alt="email">Режим работы: </span>
-                    <span class="schedule-time">пн-пт 9:00-19:00</span>
+                    <span class="schedule-title"><img class="contact-icon" src="<?php echo THEME_PATH_IMG . '/icons/clock-solid.svg'; ?>" alt="email"><?php _e( 'Режим работы', 'stolichna' ); ?>: </span>
+                    <?php
+                    foreach ($theme_options['contacts_schedule'] as $contacts_schedule) : ?>
+                        <span class="schedule-time"><?php echo $contacts_schedule; ?></span>
+                    <?php endforeach;?>
                 </div>
             </div> <!--page-contacts__con-->
 
             <div class="page-contacts__form">
                 <h2 class="home-form__title"><?php _e( 'Оставьте заявку на расчет', 'stolichna' ); ?></h2>
-<!--                <form class="main-form" action="">
-                    <div class="input-top">
-                        <input class="input-top__name" type="text" placeholder="Ваше имя">
-                        <input class="input-top__phone" type="text" placeholder="Ваш телефон">
-                    </div>
-                    <input type="email" placeholder="Email*">
-                    <textarea name="vid-uslug" placeholder="Опишите ваш заказ. Например: буклет А4,бумага мелованая матовая, 150 гр., 4+4, 2 фальца  и т.п."></textarea>
-                    <button type="submit" class="btn">Оставить заявку</button>
-                </form>-->
                 <?php echo do_shortcode('[contact-form-7 id="117" title="Оставить заявку Форма" html_class="main-form"]') ?>
             </div> <!--page-contacts__form-->
         </div> <!--page-contacts__wrap-->
@@ -58,6 +56,5 @@
         </div>
     </div>
 </section>
-
 
 <?php get_footer(); ?>
